@@ -1,0 +1,390 @@
+
+.wrapper{
+    width: 1240px;
+    margin:0 auto;
+    
+}
+.shortcut{
+    height:52px;
+    background-color: #333;
+    
+    ul{
+        display:flex;
+        justify-content:flex-end;
+        li{
+            color:#666;
+            &:last-child{
+                a{
+                    margin-right:4px;
+                    margin-left:15px;
+                }
+            }
+            a{
+                line-height:52px;
+                margin:0 15px;
+                color:#dcdcdc;
+                font-size:14px;
+                span{
+                    display:inline-block;
+                    margin-right:8px;
+                    width: 11px;
+                    height: 16px;
+                    // background-color: pink;
+                    background-image: url(../images/sprites.png);
+                    background-position: -160px -70px;
+                    vertical-align:middle;
+                }
+        }
+        }
+        
+
+    }
+}
+
+.header{
+    display:flex;
+    margin:30px auto;
+    height:70px;
+    line-height:70px;
+    .logo{
+        a{
+            display:block;
+            margin-left:25px;
+            width: 207px;
+            height: 70px;
+
+            // background-color: pink;
+            background-image: url(../images/logo.png);
+            background-size: contain;
+            font-size:0;
+        }
+    }
+    .nav{
+        ul{
+            display:flex;
+            li{
+                a{
+                    padding:8px 0;
+                    margin:0 24px;
+                    // background-color: pink;
+                    font-size:16px;
+                    color:#333;
+                    &:hover{
+                        color:#27ba9b;
+                        border-bottom:1px solid #27ba9b;
+                    }
+                }
+                &:first-child{
+                    margin-left:15px;
+                    
+                }
+            }
+        }
+    }
+    .search{
+        position: relative;
+        margin-left:55px;
+        
+        input{
+            padding-left:31px;
+            width: 172px;
+            height: 30px;
+            // background-color: pink;
+            border-bottom:2px solid  #e7e7e7;
+        }
+        span{
+            position: absolute;
+            left:0;
+            top:27px;
+            width: 18px;
+            height: 18px;
+            // background-color: pink;
+            background-image: url(../images/sprites.png);
+            background-position: -80px -70px;
+        }
+        
+    }
+    .car{
+        position: relative;
+        margin-left:15px;
+        width: 23px;
+        height: 23px;
+        // background-color: pink;
+        background-image: url(../images/sprites.png);
+        background-position: -120px -70px;
+        margin-top:24px;
+        margin-left:15px;
+        span{
+            position: absolute;
+            left:13px;
+            top:-6px;
+            width: 20px;
+            height: 15px;
+            border-radius:8px;
+            text-align: center;
+            line-height:15px;
+            background-color: #e26237;
+            font-size:13px;
+            color:#fff;
+        }
+
+    }
+    
+
+}
+
+
+.contact{
+    height:303px;
+    
+    .container{
+        display:flex;
+        // height:320px;
+        padding-top:70px;
+        box-sizing:border-box;
+        // background-color: pink;
+        dl{
+            width: 25%;
+            height: 192px;
+            /* 让行内块的dd元素水平居中 */
+            text-align: center;
+            /* 自动内减 */
+            box-sizing: border-box;
+            /* ps */
+            // background-color: skyblue;
+            /* 设置行高为1，完成精准布局 */
+            line-height: 1;
+            dt{
+                height: 51px;
+                margin-top: 8px;
+                color: #999999;
+            }
+            dd{
+                display: inline-block;
+                vertical-align: top;
+                
+                
+            }
+        }
+        .customer{
+            dd{
+                width: 92px;
+                height: 92px;
+                // background-color: pink;
+                border: 1px solid #eee;
+                font-size:14px;
+                color:#999;
+                cursor:pointer;
+                
+                &::before{
+                    content:'';
+                    display:block;
+                    width: 29px;
+                    height: 27px;
+                    margin: 22px auto 10px;
+                    // background-color: pink;
+                    background-image: url(../images/sprites.png);
+                    
+                }
+            }
+            .chat{
+                margin-right:6px;
+                &::before{
+                    background-position:  -205px -70px;
+                    
+                }
+                &:hover{
+                    &::before{
+                        background-position: -250px -70px;
+                    }
+                        
+                    }
+            }
+            .feedback{
+                &::before{
+                
+                    background-position: -300px -70px;
+                    
+                }
+                &:hover{
+                    &::before{
+                        background-position: -350px -70px;  
+                    }
+                       
+                    }
+            }
+
+
+            
+        }
+        .follow{
+            dd{
+                width: 92px;
+                height: 92px;
+                border: 1px solid #eee;
+                font-size:14px;
+                color:#999;
+                cursor:pointer;
+                &::before{
+                    content:'';
+                    display:block;
+                    width: 36px;
+                    height: 29px;
+                    margin:19px auto 10px;
+                    // background-color: pink;
+                    background-image: url(../images/sprites.png);
+
+                }
+            }
+            .weixin{
+                margin-right:6px;
+                &::before{
+                    background-position: -205px -15px;
+                }
+                &:hover{
+                    &::before{
+                        background-position: -250px -15px;
+                    }
+                }
+            }
+            .weibo{
+                &::before{
+                    background-position: -300px -15px;
+                }
+                &:hover{
+                    &::before{
+                        background-position: -350px -15px;
+                    }
+                }
+            }
+        }
+        .download{
+            .qrcode{
+                width: 116px;
+                height: 116px;
+                border: 1px solid #eee;
+                padding:6px;
+                img{
+                    width: 105px;
+                }
+                
+            }
+            .info{
+                p{
+                    font-size:14px;
+                    color:#999;
+                    // line-height:14px;
+                    &:nth-child(1){
+                        margin-top:13px;
+                    }
+                    &:nth-child(2){
+                        margin-top:8px;
+                    }
+                }
+                a{
+                    display:block;
+                    width: 103px;
+	                height: 32px;
+	                background-color: #27ba9b;
+                    font-size:14px;
+                    color:#fff;
+                    text-align: center;
+                    line-height:32px;
+                    margin-top:18px;
+                    margin-left:22px;
+                }
+
+            }
+        }
+        .tel{
+            .hotline{
+                p{
+                    &:nth-child(1){
+                        margin-top:33px;
+                        font-size:22px;
+                        color:#666;
+
+                    }
+                    &:nth-child(2){
+                        margin-top:17px;
+                        font-size:15px;
+                        color:#999;
+                    }
+                }
+            }
+        }
+        
+
+    }
+}
+
+
+.footer{
+    background-color: #333;
+    height:341px;
+    .wrapper{
+        width: 1396px;
+        .top{
+            height:174px;
+            border-bottom:3px solid #434343;
+            ul{
+                display:flex;
+                justify-content:space-around;
+                li{
+                    display:flex;
+                    span{
+                        font-size:28px;
+                        color:#fff;
+                    }
+                    line-height:174px;
+                    // background-color: pink;
+                    
+
+                    &::before{
+                        content:'';
+                        display:block;
+                        width: 58px;
+                        height: 58px;
+                        // background-color: pink;
+                        margin-top:60px;
+                        margin-right:19px;
+                        background-image: url(../images/sprites.png);
+                        background-position: 0 0;
+                    }
+                    &:nth-child(2){
+                        &::before{
+                            background-position: -65px 0;
+                        }
+                        
+                    }
+                    &:nth-child(3){
+                        &::before{
+                            background-position: -130px 0;
+                        }
+                    }
+
+
+                }
+            }
+        }
+        .bottom{
+            // height:168px;
+            text-align: center;
+            margin-top:41px;
+            p{
+                // background-color: pink;
+                font-size:14px;
+                color:#999;
+                a{
+                    font-size:14px;
+                    color:#999;
+                }
+                &:first-child{
+                    margin-bottom:16px;
+                }
+
+            }
+        }
+    }
+    
+}
